@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background: url(wp2729921.gif);
+  padding-top: 20px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.h{
+    width: 100%;
+    height: 15vh; 
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+nav{
+  background: #fff;
+  border-radius: 9px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 237, 241, 0.993);
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 20px;
+  margin: 0px 30px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul li:after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #2192ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li:hover::after{
+  width:100%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.content h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: rgb(224, 255, 121);
+}
+.content p{
+    font-size: 20px;
+    color: rgb(197, 197, 197);
+    margin-top: 20px;
+}
+.content{
+    margin-left: 5%;
+    margin-right: 60%;
+}
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #aceb38, #b103f1);
+    border-radius: 6px; 
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: #fff;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.content span{
+  color: rgb(176, 96, 251);
+  font-size: 50px;
+}
+.image{
+  top: 180px;
+  right: 270px;
+  height: 40%;
+  position: absolute;
+}
+.image1{
+  top: 250px;
+  right: 250px;
+  height: 30%;
+  width: 300px;
+  position: absolute;
+}
+.z .icon{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 60%;
+  padding-left: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.z .t {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.z .t::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.z .icon:hover .t {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.z .icon:hover span,
+.z .icon:hover .t {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.z .facebook:hover,
+.z .facebook:hover .t,
+.z .facebook:hover .t::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.z .twitter:hover,
+.z .twitter:hover .t,
+.z .twitter:hover .t::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+.z .instagram:hover,
+.z .instagram:hover .t,
+.z .instagram:hover .t::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.z .github:hover,
+.z .github:hover .t,
+.z .github:hover .t::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+.z .youtube:hover,
+.z .youtube:hover .t,
+.z .youtube:hover .t::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
